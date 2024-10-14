@@ -1,0 +1,24 @@
+baseURL = 'https://dolbeysystems.github.io/fusion-cac-web-docs/'
+relativeURLs = false
+
+languageCode = 'en-us'
+title = 'Fusion CAC Documentation'
+theme = 'relearn'
+
+[params]
+themeVariant = 'zen-light'
+disableExplicitIndexURLs = true
+
+[params.imageEffects]
+border = true
+lazy = false
+lightbox = true
+shadow = true
+
+[markup.goldmark.renderer]
+unsafe = true
+
+[outputs]
+home = ['html', 'rss', 'search', 'print']
+page = ['html', 'rss', 'print']
+section = ['html', 'rss', 'print']
