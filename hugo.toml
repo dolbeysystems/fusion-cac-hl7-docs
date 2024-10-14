@@ -1,4 +1,4 @@
-baseURL = 'https://dolbeysystems.github.io/fusion-cac-web-docs/'
+baseURL = 'https://dolbeysystems.github.io/fusion-cac-hl7-docs/'
 relativeURLs = false
 
 languageCode = 'en-us'
