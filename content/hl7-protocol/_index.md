@@ -51,18 +51,18 @@ for the first.
 ```mermaid
 sequenceDiagram
   Sender->>Listener: Connection Established
-  Sender->>Listener: HL7 Header Bytes
+  Sender-->>Listener: HL7 Header Bytes
   Sender->>Listener: HL7 Message 1
-  Sender->>Listener: HL7 Footer Bytes
-  Listener->>Sender: HL7 Header Bytes
+  Sender-->>Listener: HL7 Footer Bytes
+  Listener-->>Sender: HL7 Header Bytes
   Listener->>Sender: HL7 ACK Message for Message 1
-  Listener->>Sender: HL7 Footer Bytes
-  Sender->>Listener: HL7 Header Bytes
+  Listener-->>Sender: HL7 Footer Bytes
+  Sender-->>Listener: HL7 Header Bytes
   Sender->>Listener: HL7 Message 2
-  Sender->>Listener: HL7 Footer Bytes
-  Listener->>Sender: HL7 Header Bytes
+  Sender-->>Listener: HL7 Footer Bytes
+  Listener-->>Sender: HL7 Header Bytes
   Listener->>Sender: HL7 ACK Message for Message 2
-  Listener->>Sender: HL7 Footer Bytes
+  Listener-->>Sender: HL7 Footer Bytes
 ```
 
 ## Encoding
