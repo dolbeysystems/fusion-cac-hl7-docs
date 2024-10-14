@@ -51,19 +51,14 @@ The interface section defines properties related to the HL7 interface itself.
 | name                   | A friendly name for the interface, used in logging and service creation. |
 | host                   | The hostname or IP address that the interface should listen on.  (This is typically `localhost`) |
 | port                   | The TCP/IP port that the interface should listen on. |
-| *header**              | The HL7 message header character string |
-| *footer**              | The HL7 message footer character string |
+| *header**              | The HL7 message header character code array |
+| *footer**              | The HL7 message footer character code array|
 | *strip_characters*     | An array of characters that should be removed from all incoming messages before they are stored |
 | *encoding*             | The name of the encoding to use when sending/receiving hl7 messages.  A list of valid encoding can be found [here](https://encoding.spec.whatwg.org/#concept-encoding-get) |
 | *id_field_spec*        | The hl7 path to the message Id (default "MSH-10") |
 | *account_number_field* | The hl7 path to the account number (default "PID-18.1") |
 | *required_fields*      | A vector of hl7 paths denoting fields that must be in the message.  If these are not present, the message will be rejected. |
  
-> [!important] Header/Footer Settings Have Changed
-> In prior versions, an array of character codes was used for the header/footer setting.
-> In the current version, you are expected to copy paste the *literal characters* if you
-> want to enter a non-default header/footer value.
-
 ## Log Section
 
 The log section contains properties related to logging.
